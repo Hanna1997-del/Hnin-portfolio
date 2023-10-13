@@ -46,7 +46,7 @@ export default function Navbar() {
           'flex justify-between items-center h-16',
            showMenu ? "hidden" : "",
         )}>
-           <Link href="/" className='text-3xl text-white '>Hnin Thet Hmue</Link>
+           <Link href="/" className='text-3xl text-white '>HTH</Link>
            <div className='hidden md:flex items-center justify-center space-x-4'>
             {navLinks.map(navLink => (
               <Link key={navLink.path} href={navLink.path} className={`text-lg uppercase font-medium TextShadow ${isActive(navLink.path)} `}>

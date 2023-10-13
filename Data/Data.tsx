@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
     {path: "/", label: "Home"},
     {path: "/about", label: "About"},
     {path: "/portfolio", label: "Portfolio"},
-    {path: "/contact", label: "Contact"},
+    {path: "/contact", label: "Contact"}
 ];
 
 const services: ServiceProps[] = [
