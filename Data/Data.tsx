@@ -15,7 +15,14 @@ const navLinks: NavLink[] = [
     {path: "/portfolio", label: "Portfolio"},
     {path: "/contact", label: "Contact"}
 ];
-
+const skills = [
+    {name: "HTML" , level: 80},
+    {name: "CSS" , level: 70 },
+    {name: "JavaScript" , level: 75},
+    {name: "TypeScript" , level: 60},
+    {name: "ReactJS" , level: 65},
+    {name: "NextJS" , level: 75},
+]
 const services: ServiceProps[] = [
     { id: 1, title: "UI/UX Design", icon: <BsVectorPen />, finished: 113},
     { id: 2, title: "Web Development", icon: <BsCode />, finished: 209},
@@ -27,4 +34,4 @@ const countUpItems: countUpItemsProps[] = [
 ]
 
 
-export { navLinks};
+export { navLinks, skills};

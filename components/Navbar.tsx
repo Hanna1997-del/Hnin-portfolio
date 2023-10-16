@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { navLinks } from '@/Data/Data'
 import { usePathname } from 'next/navigation'
@@ -9,7 +9,15 @@ import clsx from 'clsx';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState<boolean>(false)
+  const [navScroll,setNavScroll] = useState<boolean>(false)
   const pathname = usePathname()
+  useEffect(() => {
+    function scrollActive() {
+      setNavScroll(window.scrollY > 20)
+    }
+    window.addEventListener("scroll", scrollActive)
+    return () => window.removeEventListener("scroll" , scrollActive)
+  },[])
   const menuVariants = {
     hidden : {
       scale:0
@@ -40,7 +48,8 @@ export default function Navbar() {
   )
   const socialClassNames= "text-3xl cursor-pointer text-white"
   return (
-    <header className='fixed w-full top-0 left-0 z-20 '>
+    <header className={`fixed w-full top-0 left-0 z-20 
+     ${navScroll ? "bg-Glass backdrop-blur-sm" : ""}`}>
       <nav className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 '>
         <div className={clsx(
           'flex justify-between items-center h-16',

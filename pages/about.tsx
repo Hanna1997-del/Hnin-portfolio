@@ -2,6 +2,8 @@ import Wrapper from '@/components/Wrapper'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { skills } from '@/Data/Data'
+import Skills from '@/components/Skills'
 import React from 'react'
 
 export default function about() {
@@ -25,6 +27,7 @@ export default function about() {
           </div>
         </div>
       </div>
+      <Skills skills={skills}/>
     </Wrapper>
     </>
   )
