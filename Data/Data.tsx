@@ -31,7 +31,15 @@ const services: ServiceProps[] = [
 ];
 const countUpItems: countUpItemsProps[] = [
     
+];
+
+const contacts: ContactsProps[] = [
+    {id:1, title: "Address" , text: "87 street , MingalarTaungNyunt tsp, Yangon"},
+    {id:2 , title: "Phone" , text: "+959-775-975-632"},
+    {id:3 , title: "Email" , text: "hninthethmue8@gmail.com"}
 ]
 
 
-export { navLinks, skills};
+
+
+export { navLinks, skills, contacts};
