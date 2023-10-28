@@ -18,8 +18,8 @@ export default function contact() {
         <div className='px-6 py-6 text-center'>
           <div className="uppercase text-4xl tracking-widest font-semibold">Contact</div>
           <p className='Leading-8 mb-8 text-sm max-w-xl mt-10 text-WhiteGray'>
-            If you're looking for a skilled frontend developer to help bring your web application ideas to life, feel free to contact me.
-            Let's discuss how I can contribute to your team and deliver top-notch results.
+           {` If you're looking for a skilled frontend developer to help bring your web application ideas to life, feel free to contact me.
+            Let's discuss how I can contribute to your team and deliver top-notch results.`}
           </p>
           <div>
             {contacts.map(contact =>(
